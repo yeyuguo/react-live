@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import * as Arco from "@arco-design/web-react"
 import "@arco-design/web-react/dist/css/arco.css";
+// console.log("🚀 ~ file: app.tsx:14 ~ exports:", exports)
+
 
 
 // 公共作用域
@@ -40,7 +42,7 @@ export const DemoApp = ({ code, myScope }: ILiveProps) => {
     <div>
       <LiveProvider code={code} scope={renderScope} noInline
         transformCode={(codeString: string) => {
-          console.log("🚀 ~ file: app.tsx:43 ~ DemoApp ~ codeString:", codeString)
+          // console.log("🚀 ~ file: app.tsx:43 ~ DemoApp ~ codeString:", codeString)
           return codeString
         }}
       >
