@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@arco-design/web-react": "^2.50.0",
+    "@babel/generator": "^7.22.7",
+    "@babel/parser": "^7.22.7",
+    "@babel/standalone": "^7.22.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-live": "*",

@@ -4,6 +4,8 @@ import "./index.css";
 import { DemoApp } from "./app";
 import MyRenderComponent from './render-code'
 
+import parseComponentCode from './parse-code'
+
 
 
 const code = `
@@ -134,18 +136,17 @@ const data = [
 const App = () => {
   return <Table columns={columns} data={data} />;
 };
-// export const App
 
+export default App
+
+`
+const removeImportExport = parseComponentCode(renderImportCode)
+const renderCode = `${removeImportExport.body}
 render(<App />)
 `
-
-import(renderImportCode).then(data => {
-  console.log("🚀 ~ file: main.tsx:143 ~ import ~ data:", data)
-  
-})
-
+console.log("🚀 ~ file: main.tsx:146 ~ renderCode:", renderCode)
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <DemoApp code={arcoTable} />
+    <DemoApp code={renderCode} />
   </React.StrictMode>
 );

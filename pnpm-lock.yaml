@@ -36,6 +36,9 @@ importers:
   packages/demo:
     specifiers:
       '@arco-design/web-react': ^2.50.0
+      '@babel/generator': ^7.22.7
+      '@babel/parser': ^7.22.7
+      '@babel/standalone': ^7.22.8
       '@types/react': ^18.0.31
       '@types/react-dom': ^18.0.11
       '@typescript-eslint/eslint-plugin': ^5.57.1
@@ -55,6 +58,9 @@ importers:
       vite: ^4.3.2
     dependencies:
       '@arco-design/web-react': 2.50.0_867028bf30ab2a1fd87a48d0163e1a16
+      '@babel/generator': 7.22.7
+      '@babel/parser': 7.22.7
+      '@babel/standalone': 7.22.8
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-live: link:../react-live
@@ -1862,6 +1868,11 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+
+  /@babel/standalone/7.22.8:
+    resolution: {integrity: sha512-Bm9Sn+FfDqcvxYo/lz5BFo/PWBcjhxD6rtifkchFes/rU8/u4FacCFY/WdqwPtycH54THlXqMYMjaWigQaMpYA==}
+    engines: {node: '>=6.9.0'}
+    dev: false
 
   /@babel/template/7.22.5:
     resolution: {integrity: sha512-X7yV7eiwAxdj9k94NEylvbVHLiVG1nvzCV2EAowhxLTwODV1jl9UzZ48leOC0sH7OnuHrIkllaBgneUykIcZaw==}
